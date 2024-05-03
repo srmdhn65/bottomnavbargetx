@@ -59,7 +59,7 @@ class BottomBar extends StatelessWidget {
       height: height?.toDouble(),
       decoration: BoxDecoration(color: backgroundColor),
       child: Padding(
-        padding: const EdgeInsets.all(5),
+        padding: const EdgeInsets.all(0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: List.generate(
@@ -194,6 +194,7 @@ class _BottomBarItemWidget extends StatelessWidget {
           child: Padding(
             padding: EdgeInsets.all(10),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconTheme(
                   data: IconThemeData(
