@@ -59,7 +59,7 @@ class BottomBar extends StatelessWidget {
       height: height?.toDouble(),
       decoration: BoxDecoration(color: backgroundColor),
       child: Padding(
-        padding: const EdgeInsets.all(8),
+        padding: const EdgeInsets.all(5),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: List.generate(
