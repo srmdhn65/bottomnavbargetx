@@ -57,9 +57,14 @@ class BottomBar extends StatelessWidget {
 
     return Container(
       height: height?.toDouble(),
-      decoration: BoxDecoration(color: backgroundColor),
+      decoration: BoxDecoration(color: backgroundColor, boxShadow: [
+        BoxShadow(
+            color: backgroundColor!.withOpacity(0.5),
+            blurRadius: 8,
+            offset: const Offset(0, 10))
+      ]),
       child: Padding(
-        padding: const EdgeInsets.all(0),
+        padding: const EdgeInsets.symmetric(horizontal: 10),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: List.generate(
